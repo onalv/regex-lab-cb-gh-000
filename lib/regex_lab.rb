@@ -1,13 +1,5 @@
 def starts_with_a_vowel?(word)
-  puts "andrea".scan(/\b[AEIOUaeiou]\w*/)
-  puts "luis".scan(/\b[AEIOUaeiou]\w*/)
-  puts "luis".match(/\b[AEIOUaeiou]\w*/)
-  puts "luis".match(/\b[AEIOUaeiou]\w*/)
-  if word.scan(/\b[aeiou]\w*/) == nil
-    false
-  else
-    true
-  end
+  !!word.capitalize.match(/\A+[AEIOU]/)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
@@ -25,5 +17,3 @@ end
 def valid_phone_number?(phone)
 
 end
-
-starts_with_a_vowel?("word")
