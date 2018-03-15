@@ -1,8 +1,8 @@
 def starts_with_a_vowel?(word)
-  puts "andrea".word.scan(/\b[AEIOUaeiou]\w*/)
-  puts "luis".word.scan(/\b[AEIOUaeiou]\w*/)
-  puts "luis".word.match(/\b[AEIOUaeiou]\w*/)
-  puts "luis".word.match(/\b[AEIOUaeiou]\w*/)
+  puts "andrea".scan(/\b[AEIOUaeiou]\w*/)
+  puts "luis".scan(/\b[AEIOUaeiou]\w*/)
+  puts "luis".match(/\b[AEIOUaeiou]\w*/)
+  puts "luis".match(/\b[AEIOUaeiou]\w*/)
   if word.scan(/\b[aeiou]\w*/) == nil
     false
   else
